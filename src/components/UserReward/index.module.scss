@@ -1,0 +1,54 @@
+@import 'spwa-ui-library/esm/mixins/index.scss';
+@import '../../loyaltyVariables';
+
+.UserReward {
+  flex-basis: 47.8%;
+    max-height: 37rem;
+    overflow: hidden;
+    aspect-ratio: 675/350;
+    height: -moz-fit-content;
+    height: fit-content;
+
+    @include media-md{
+      aspect-ratio: 566/350;
+    }
+
+  // img {
+  //   width: 100%;
+  // }
+  .rewardLink{
+    display: contents;
+  }
+}
+// .rewardContent { 
+//   padding: 4rem 3rem;
+
+//   >img {
+//     width: 100%;
+//     max-width: 209px;
+//   }
+
+//   p {
+//     font-weight: 600;
+//     font-size: 22px;
+//     color: #ffffff;
+//     line-height: 40px;
+//     max-width: 335px;
+//     padding-top: 20px;
+
+//     .points {
+//       color: #FFCA3A;
+//       text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+//       line-height: 31px;
+//       background: linear-gradient(110.72deg, rgba(255, 255, 255, 0.6) 0%, rgba(196, 196, 196, 0.1) 100%);
+//       -webkit-backdrop-filter: blur(3.75px);
+//       backdrop-filter: blur(3.75px);
+//       border-radius: 4.15385px;
+//       padding: 4px 8px;
+//       margin-right: 4px;
+//     }
+//   }
+//   .rewardLink{
+//     margin-top: 2.5rem;
+//   }
+// }

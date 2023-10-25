@@ -1,0 +1,157 @@
+@import 'spwa-ui-library/esm/mixins/index.scss';
+@import '../../loyaltyVariables';
+
+.PointBalanceCard {
+  background-position: right bottom;
+  object-fit: cover;
+  background-size: cover;
+  height: auto;
+  min-height: 38rem;
+  border-radius: .6rem;
+  background-color: $bgRed;
+  box-shadow: 0px 6px 4px rgba(188, 191, 197, 0.8);
+  @include pos(relative);
+  cursor: pointer;
+
+  .buttonWrapper {
+    text-align: center;
+    width: 100%;
+    @include pos(absolute, null, null, 1.9rem, -50%);
+    @include transform(50%, 0);
+
+    button {
+      max-width: 190px;
+      width: 100%;
+      padding: 1.5rem 1.8rem;
+      box-shadow: 0px 8px 16px rgba(62, 55, 56, 0.2);
+
+      background-color: $black;
+      color: $white;
+      border: 1px solid #ff7675;
+      font-family: var(--ff-primary);
+      justify-content: center;
+      .img {
+        margin-inline-start: .6rem;
+      }
+    }
+  }
+}
+
+.cardWrapper {
+  padding: 2rem 3rem 0;
+  img{
+    height: 7.2rem;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+
+  }
+
+  p {
+    @include am-font(1.8rem, 2.1rem, 600);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1.1rem 0 1.4rem;
+  }
+
+}
+
+.rewardPoints {
+  margin: 0px 1.4rem;
+
+  .rewardPoints_Text {
+    @include am-font(2.4rem , 2.8rem,);
+    color: $white;
+  }
+
+
+}
+
+// mobile view starts here
+
+
+.mobBalanceCard{
+  background-size: cover;
+  aspect-ratio: 344/178;
+  border-radius: 2.2rem;
+  cursor: pointer;
+  @include pos(relative);
+
+  .bottomContainer{
+    @include pos(absolute);
+    bottom : 0;
+    width: 100%;
+  .topContainer{
+    display: block;
+    @include am-font(1.1rem , 1.3rem, 600);
+    color: $white;
+    opacity: 0.8;
+    padding: 10.1rem 1.5rem 8px;
+  }
+  .showRewardContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.5rem 1.5rem;
+    justify-content: space-between;
+    align-items: end;
+
+    .ponitsContainer {
+      padding: 7px 10px;
+      width: clamp(10rem , 16rem ,30rem);
+
+      .rewardPoints {
+        margin: 0px 14px;
+      
+        .rewardPoints_Text {
+          @include am-font(1.4rem , 1.7rem, 700);
+          color: $white;
+        }
+      
+      
+      }
+    }
+
+
+    
+
+    .buttonWrapper {
+      text-align: center;
+      button {
+        max-width: 19rem;
+        width: 100%;
+        padding: 1rem 1.8rem;
+        box-shadow: 0px 8px 16px rgba(62, 55, 56, 0.2);
+        background-color: $black;
+        color: $white;
+        @include am-font(1.1rem , 1.3rem, 600);
+        margin-top: 0;
+  
+        .img {
+          margin-inline-start: .6rem;
+        }
+      }
+    }
+  }
+}
+}
+
+
+[dir="rtl"] {
+  .PointBalanceCard {
+    .buttonWrapper {
+      button {
+        .img{
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+}
+[dir="rtl"] {
+.img{
+  transform: scaleX(-1);
+}
+}
+.pushRight{
+  justify-content: flex-end;
+}

@@ -1,0 +1,98 @@
+@import 'spwa-ui-library/esm/mixins/index.scss';
+@import '../../loyaltyVariables';
+
+.errorContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.errorBox{
+    max-width: 253px;
+    background: var(--clr-light-100);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @include border-radius(20px);
+    
+    .nonLocation{
+        background: rgba(255, 132, 17, 0.1);
+        color: var(--clr-brown-500);
+        @include am-font(1.3rem, 3.6rem, 500);
+        @include border-radius(10px);
+        display: inline-flex;
+        padding: 0 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .warningContainer{
+        margin: 2.1rem 0 0.9rem;
+
+        .warningSign{
+            width: 4.7rem;
+            height: 4.7rem;
+            background: #fc8c1c;
+            border-radius: 3rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            
+            svg{
+                color: #fff;
+                font-size: 2rem;
+            }
+
+        }
+
+        p{
+            color: var(--secondary-red);
+            @include am-font(1.8rem, 2.1rem, 600);
+            margin-top: 1.5rem;
+        }
+    }
+    p{
+        color: var(--clr-dark-400);
+        @include am-font(1.3rem, 1.6rem, 500);
+        padding-bottom: 1.3rem;
+    }
+    .locationTerms{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        justify-content: center;
+      
+      p{
+          color: var(--clr-secondary-400);
+          @include am-font(1.1rem, 1.5rem, 700);
+          padding-bottom: 0;
+          display: inline-flex;
+          cursor: pointer;
+      }  
+      span{
+        margin-inline-start : 0.5rem;
+        
+        cursor: pointer;
+      }
+    }
+    button{
+        cursor: pointer;
+        background: var(--clr-primary-400);            
+        color: var(--clr-light-100);
+        @include am-font(1.4rem, 3.9rem, 700);
+        width: 100%;
+        display: flex;
+        border: none;
+        text-align: center;
+        align-items: center;
+        @include border-radius(0 0 20px 20px);
+        justify-content: center;
+        border-top: 1px dashed;
+    }
+    .errorContent {
+        padding-inline: 1rem;
+    }
+}
+
+.badge{
+    width: 100%;
+}

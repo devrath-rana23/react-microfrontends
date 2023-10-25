@@ -1,0 +1,66 @@
+$containerSidePadding: clamp(1.6rem, calc(1.5rem + 0.5vw + 0.1vh), 2rem);
+
+@media screen and (min-width: 1024px) {
+  $containerSidePadding: clamp(12.5rem, calc(12.5rem + 0.5vw + 0.1vh), 2rem);
+}
+
+$positionRelative:relative;
+
+$text-gray-color: #666666;
+
+$whiteboxShadow:0px 2.17631px 7.61708px rgba(155, 204, 244, 0.241231);
+$textColor2:#6A6E7B;
+$textColor3:#6a6e7b66;
+$bgRed:#E4002B;
+$bgTransparent:transparent;
+$white: #fff;
+$primary-black: #393f52;
+$dark-grey: #6a6e7b;
+$primary-blue:#007aff;
+$black : #000000;
+$primary-red : #e4002B;
+$text-red : #dd1e42;
+$secondary-red: #d2183b;
+$anti-flash-white: #f3f3f3;
+$reward-red: #bd202d;
+$shadow-reward-red: #e59cab;
+$copied-color: #41416e;
+$border-color: #f1eeee;
+$modal-text: #6b6a6a;
+$disable-btn: #b7b7b7;
+$text-color: #5a5a5a;
+$light-pink: #FFFAF1;
+$icon-gray : #7B7878;
+$text-gray : #6B6B6B;
+$yellow-color: #f7B500;
+$green-color: #5dc658;
+$close-color : #babcc4; 
+$warning-bg : #ec9524;
+$neutral-grey :#a9bdd0;
+$warning-color : #fef7eb;
+$discount-color : #00a402;
+$heading-color : #de0000;
+$primary-orange : #FB8D45;
+
+
+
+//font-weight variables
+
+$fontWeight300:300;
+$fontWeight400:400;
+$fontWeight500:500;
+$fontWeight600:600;
+$fontWeight700:700;
+$fontWeightBold:bold;
+$fontWeightNormal:normal;
+
+
+
+//font-size-variables
+$font12:12px;
+$font13:13px;
+$font14:14px;
+$font15:15px;
+$font16:16px;
+$font17:17px;
+$font18:18px;

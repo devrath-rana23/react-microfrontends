@@ -1,0 +1,50 @@
+@import 'spwa-ui-library/esm/mixins/index.scss';
+
+.dialogBox {
+  padding: 10px;
+
+  .paperStyle {
+    
+    background-color: transparent;
+    box-shadow: none !important;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .btnCross {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .btn {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 6px 13px;
+      min-width: auto;
+    }
+
+  }
+  .badge{
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+// .icon {
+//   text-align: center;
+//   position: relative;
+
+//   &::before {
+//     content: url('../../assets/kfc-line-bar-mob.svg');
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+
+//     @include media-md {
+//       content: url('../../assets/kfc-line-bar.svg');
+//     }
+//   }
+// }
