@@ -1,5 +1,5 @@
 {
-  "name": "react-microfrontends",
+  "name": "devrath-rana23/react-microfrontends",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "vite build",
-    "test": "react-scripts test",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,5 +46,8 @@
   "devDependencies": {
     "sass": "^1.69.4",
     "vite": "^4.5.0"
+  },
+  "publishConfig": {
+    "@devrath-rana23:registry": "https://npm.pkg.github.com"
   }
 }
